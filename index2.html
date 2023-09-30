@@ -1,0 +1,489 @@
+<html lang="en">
+<head>
+     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified CSS -->
+
+    <style> 
+        .brand-logo img {
+        position: absolute;
+        width: 400px;
+        height: 60px;
+        padding-top: 8px;
+        padding-left: 0px;
+
+    }
+    .row{
+        margin: none;
+    }
+
+    .row_kawasaki{
+        border: 5px solid #00e676;
+    }
+    .row_honda{
+        border: 5px solid#e53935;
+    }
+    .row_yamaha{
+        border: 5px solid#1565c0
+    }
+    .row_ktm{
+        border: 5px solid#ff8f00;
+    }
+    .collection-item img{  
+        width: 350px;
+      height: 200px;
+      position:relative;
+    }
+
+    .section{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    }
+
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+    .banner .quote{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        border-radius: 40px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color:#b71c1c;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    } 
+
+    .banner .quote span{
+        font-size: 1.4em;
+    }
+
+    ul.specs{
+        list-style-type: square;
+    }
+    @media (min-width: 1025px) and (max-width: 1280px){
+    .logo img{
+        height: 25vw;
+    }
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.5vw;
+        }
+        
+
+    .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 25vw;
+            height: 5vw;          
+            left: 1vw;
+    }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+        .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 40vw;
+            height: 6vw;          
+            left: 7vw;
+    } 
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.8vw;
+        }
+
+    }
+    
+@media (min-width: 481px) and (max-width: 767px) {
+    .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 50vw;
+            height: 8vw;          
+            left: 3vw;
+    }
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.8vw;
+        }
+    }
+
+@media (max-width: 480px) {
+    .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 50vw;
+            height: 11vw;          
+            left: 8vw;
+    }
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.8vw;
+        }
+    }
+
+    .row > div{
+            border: 4x solid transparent;
+            line-height: 20px;
+        }
+
+    .page-footer {
+        background: #fdd835 !important;
+    }
+</style>
+
+</head>
+<body class="black">
+
+
+<!-- /* NAVBAR */ -->
+<div class="navbar-fixed">
+    <nav class="black nav-wrapper">
+        <a href="/index1.html" class="brand-logo"><img src="img/logo.png" alt="kawasaki"></a>
+
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile"class="right hide-on-med-and-down">
+            
+            <li><a href="/index1.html" class="btn black">HOME
+            </a></li>
+
+            <li><a href="/index2.html" class="btn black modal-trigger">CRUISER
+            </a></li>
+
+            <li><a href="/index3.html" class="btn black modal-trigger">SPORT
+            </a></li>
+
+            <li><a href="/index4.html" class="btn black modal-trigger">TOURING
+            </a></li>
+
+        </ul>
+</div>
+<!-- /* SIDE NAV    */ -->
+        <ul class="sidenav gray" id="mobile-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <li><a href="/index1.html" class="btn black">HOME
+            </a></li>
+
+            <li><a href="/index2.html" class="btn black modal-trigger">CRUISER
+            </a></li>
+
+            <li><a href="/index3.html" class="btn black modal-trigger">SPORT
+            </a></li>
+
+            <li><a href="/index4.html" class="btn black modal-trigger">TOURING
+            </a></li>
+
+            <li><a href="#" class="btn sidenav-close red">CLOSE
+                <i class="material-icons right">close</i>
+            </a></li>
+            
+        </ul>
+    </nav>
+
+
+<header>
+        <div class="parallax-container hide-on-med-and-down" style="height: 500px; width: 100%;">
+            <div class="parallax">
+                <img src="cruiser/Cruiser Banner.png">
+            </div>
+        </div>
+
+        <section class="banner hide-on-large-only">
+            <img src="cruiser/Cruiser Banner.png" alt="">
+        </section>
+</header>
+
+<br>
+<div>
+    <div class="row black">
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="cruiser/UM Renegade Commando.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border: 3px solid #fdd835;">
+                    <span class="card-title activator">UM Renegade Commando
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW
+                        <i class="material-icons right">close</i>
+                    </span>
+                        <p>
+                            <H5>
+                                The UM Renegade Commando is a cruiser offering of the brand that’s touted to be a performer that gives an imposing road presence.It comes with three engines: 200cc, 230cc, and 300cc (P150,000). Color options are green, brown, and black.
+                                <br><br>
+                                Notable equipment of the bike include an ergonomic riding position, with pulled-back narrow handlebars for easy city commuting, and centered footrests for upright seating and a wide cushioned seat for hours of riding.
+                                <br><br>
+                                Powering the Renegade Commando are engine sizes at 200cc (18hp, 15Nm); 230cc (20hp, 18Nm); and 300cc (25hp, 22Nm). The first two engines are air-cooled while the 300cc mill is liquid-cooled. All three feature one cylinder and four-strokes and are paired with a 6-speed transmission.
+                                <br><br>
+                                For safety, the motorcycle is fitted with disc brakes on all wheels.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="cruiser/2023 Ducati XDiavel.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator">2023 Ducati XDiavel
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                The Ducati XDiavel achieves that needed performance without compromising material quality and finishes. Like all Ducatis, this street-legal cruiser bike brags its sporty power and advanced electronics. Locally, it is made available with a special edition Black Star Livery priced at P1,820,000
+                                <br><br>
+                                This two-wheeler features a new seat treated with brown leather, adding a bit of sophistication to the entire bike. Apart from that, it is also finished with a pair of good looking 17-inch rims. Other standard features of the XDiavel include cruise control, different riding modes, a digital gauge, LED headlamp, tail lamp, and indicators.
+                                <br><br>
+                                Both variants share the same 1,262cc Testastretta 11 deg L-Twin, liquid-cooled, Desmodromic Distribution engine, producing a healthy 152 hp and 126 Nm of torque. Its engine is then paired with a 6-speed manual transmission.
+                                <br><br>
+                                Safety and security features of the Ducati XDiavel include Anti-lock Braking System (ABS), traction control, slipper clutch, immobilizer, steering damper, and a pass switch.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="cruiser/bmw-r18.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">BMW R18
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                Big, bold, heavy, and with tons of personality, the BMW R18 may just be the most niche cruiser yet. Hailing from Germany, the Berlin-Built cruiser is a special one from BMW Motorrad. This bike is not like your typical BMW R 1250 GS or your track-focused S 1000 RR. Heck, it’s even more of a cruiser than the R Nine T roadsters. 
+                                <br><br>
+                                In the lineup, it’s such a hulking example of what BMW thinks a cruiser should be done with a boxer engine, and done with German craftsmanship and engineering. The model is also clever enough to hide rider aids and modes that are cheekily named. Under all of that fluff and fuzz, however, what is it like to live with one, and is it worth its almost P2,000,000 price tag? Without a doubt, I can honestly say that this bike isn’t for everyone, but there are a select few riders out there with the money and the appreciation that truly fits a bike like this, and that’s also its downfall, but also another thing that makes it quite special in my opinion.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="cruiser/Kawasaki Vulcan S 650.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">Kawasaki Vulcan S 650
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                The Kawasaki Vulcan S 650 is not your typical cruiser bike. It is made to bring riders a high level of confidence and dominance on the track, making it one of the sought-after cruiser bikes in the Philippine market. Priced at P415,000, you get a sporty-looking big bike, complemented with comfort, great riding capabilities and a bunch of toys you can find in its well-built body.
+                                <br><br>
+                                Highlighting its great features, the Vulcan S 650 is equipped with digital compact instrument cluster, along with analogue-style tachometer, multi-function LCD screen. It also includes a fuel gauge, digital speedometer, clock, odometer, dual trip meters, low fuel indicator, average fuel consumption, and economical riding indicator. Rider’s safety, on the other hand, is taken care of Anti-lock Braking System (ABS), and immobilizer.
+                                <br><br>
+                                Powering the Kawasaki Vulcan S is an impressive 649cc liquid-cooled 4-stroke, DOHC gasoline engine that can deliver up to 62 hp and 64 Nm of torque. This powertrain is then connected to a 6-speed manual gearbox.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="cruiser/2023 Honda Rebel 500.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">Honda Rebel 500
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                    <p>
+                        <H5>
+                            It’s got style, attitude, and authenticity with the pace to match, that's the Honda     Rebel 500. It has been in the market since 2019, with this model being available with only one ABS variant which retails at P375,000.
+                            <br><br>
+                            Staying true to its back-to-basics ethos, the Rebel 500 has only what you really need. One of them is a digital gauge that boasts two trip meters, a fuel gauge, a neutral indicator, a clock, and a speedometer.
+                            <br><br>
+                            Performance comes courtesy of a liquid-cooled, parallel-twin 471cc engine that has two cylinders and eight valves. Power and torque are rated at 46 hp and 43 Nm, respectively, with those numbers put to the wheels via a 6-speed manual transmission.
+                            <br><br>
+                            Safety and security features of the Rebel 500 include an Anti-lock Braking System (ABS) and a side-stand that switches off the engine and not left running when parked.                         
+                        </H5>
+                    </p>
+                </div>
+            </div>
+        </div>      
+
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="cruiser/UM Renegade Sport S.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">UM Renegade Sport S
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                The UM Renegade Sport S is a cruiser offering of the brand that’s touted to be a performer packed with safety innovations. Three engines are offered: 150cc (P85,900); 200cc (P95,900); and 300cc (P148,000). It comes in color options such as red, orange, and grey.
+                                <br><br>
+                                Notable equipment of the bike include LED side lights for better visibility and road presence, and a handlebar that’s designed to lower the center of gravity to enhance balance and handling.
+                                <br><br>
+                                Powering the Renegade Sport S are engine sizes at 150cc; 200cc (16hp, 15Nm ); and 300cc (25hp, 22Nm). The first two engines are air-cooled while the 300cc mill is liquid-cooled. All three have one cylinder and four-strokes. They are then paired with a chain-driven final drive transmission.
+                                <br><br>
+                                For safety, the motorcycle is fitted with disc brakes on all wheels.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="cruiser/Harley-Davidson Road Glide STwebp.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">Harley-Davidson Road Glide ST
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                The Harley-Davidson Road Glide has the performance and features to make it cover all the kilometers in style.
+                                <br><br>
+                                In terms of features, this bike comes standard with a 4.3-inch infotainment screen that has radio, navigation, and Bluetooth. There's also a shark-nose fairing that incorporates the headlight and windscreen to protect the handlebar, the rider, and LED headlights.
+                                <br><br>
+                                Powering the Road Glide is a 1,868cc liquid-cooled Milwaukee engine that has and makes 144Nm of torque. It’s then mated to a 6-speed manual transmission.
+                                <br><br>
+                                For safety, it comes with Brembo brakes with an Anti-lock Braking System (ABS).
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="cruiser/Royal Enfield Meteor 350.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">Royal Enfield Meteor 350
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                The Royal Enfield Meteor is finally in the Philippines. Effectively replacing the highly successful Classic 350 range, the Meteor employs classic styling and Royal Enfield's bullet-proof engine. Starting at P232,000, this bike is a strong contender in the cruiser segment.
+                                <br><br>
+                                The Royal Enfield Meteor 350's charm lies in its simple yet elegant construction. Its timeless design, refined with a new level of sophistication & technology, inspired by open highways, incredible handling, and comfort for all-day easy riding. It comes standard with a circular headlamp with LED DRL’s, a peanut-shaped fuel tank, pulled-back handlebar, swooping rear fender, and an LED taillight. The Meteor 350 is Royal Enfield's first-ever motorcycle to be equipped with a USB charger and the Tripper Navigation feature assisting in turn-by-turn navigation. Moreover, you also get a pair of good-looking 18-inch wheels which does complement the overall classic styling of the bike.
+                                <br><br>
+                                There’s only one powertrain option for this classic cruiser. It comes equipped with a 350cc air-cooled, fuel-injected, single-cylinder engine which pumps out a decent 20.2 hp and 27 Nm of torque mated to a 5-speed manual gearbox.
+                                <br><br>
+                                Standard safety and security features of the Royal Enfield Meteor 350 include an Anti-lock Braking System (ABS), and a pass switch.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+
+    </div>       
+</div>
+
+<section class="ffooter">
+	<footer class="page-footer">
+        <div class="container">
+            <div class="row">
+				<div class="col l6 s12">
+                	<h4 class="black-text">Contact Us</h4>
+               	    <p class="black-text">123 Anywhere St., Any City, ST 12345</p>
+                    <p class="black-text">Phone : +631234567892</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                	<h4 class="black-text">Social Media Links</h4>
+                	  <ul>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Facebook</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Instagram</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Twitter</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Whatsapp</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Telegram</a></li>
+                	  </ul>
+                </div>
+            </div>
+       </div>
+
+    		<<div class="footer-copyright">
+            	<div class="container black-text">
+            		© 2023 Copyright @ WorldOfSpeed
+            			<a class="black-text right" href="#!">WE ARE SPEED <span><i class="tiny material-icons">motorcycle</i></span></a>
+               </div>
+            </div>
+    </footer>
+</section> 
+
+</body>
+
+        
+    <script src="js/jsquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $(".modal").modal();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+        });   
+    </script>
+
+</body>
+</html>

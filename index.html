@@ -1,0 +1,1044 @@
+<html lang="en">
+<head>
+     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Kawasaki Motorcycle Website</title>
+
+    <style> 
+            .brand-logo img {
+            position: absolute;
+            width: 400px;
+            height: 60px;
+            padding-top: 8px;
+            padding-left: 0px;
+
+        }
+        .row{
+            margin: none;
+        }
+
+        .row_kawasaki{
+            border: 5px solid #00e676;
+        }
+        .row_honda{
+            border: 5px solid#e53935;
+        }
+        .row_yamaha{
+            border: 5px solid#1565c0
+        }
+        .row_ktm{
+            border: 5px solid#ff8f00;
+        }
+        .collection-item img{  
+            width: 350px;
+          height: 200px;
+          position:relative;
+        }
+
+        .section{
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        }
+
+        .banner img{
+            width: 100%;
+            height: auto;
+        }
+        .banner .quote{
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            border-radius: 40px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color:#b71c1c;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        } 
+
+        .banner .quote span{
+            font-size: 1.4em;
+        }
+
+        ul.specs{
+            list-style-type: square;
+        }
+        @media (min-width: 1025px) and (max-width: 1280px){
+        .logo img{
+            height: 25vw;
+        }
+        .banner .quote{
+            display: flex;
+            position: absolute;
+            top: 23vw;
+            left: 2%;
+            }
+            .banner .quote h1{
+            font-size: 4.5vw;
+            }
+            
+
+        .brand-logo img {
+                display: center;
+                position: absolute;
+                width: 25vw;
+                height: 5vw;          
+                left: 1vw;
+        }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px){
+            .brand-logo img {
+                display: center;
+                position: absolute;
+                width: 40vw;
+                height: 6vw;          
+                left: 7vw;
+        } 
+        .banner .quote{
+            display: flex;
+            position: absolute;
+            top: 23vw;
+            left: 2%;
+            }
+            .banner .quote h1{
+            font-size: 4.8vw;
+            }
+
+        }
+        
+    @media (min-width: 481px) and (max-width: 767px) {
+        .brand-logo img {
+                display: center;
+                position: absolute;
+                width: 50vw;
+                height: 8vw;          
+                left: 3vw;
+        }
+        .banner .quote{
+            display: flex;
+            position: absolute;
+            top: 23vw;
+            left: 2%;
+            }
+            .banner .quote h1{
+            font-size: 4.8vw;
+            }
+        }
+
+    @media (max-width: 480px) {
+        .brand-logo img {
+                display: center;
+                position: absolute;
+                width: 50vw;
+                height: 11vw;          
+                left: 8vw;
+        }
+        .banner .quote{
+            display: flex;
+            position: absolute;
+            top: 23vw;
+            left: 2%;
+            }
+            .banner .quote h1{
+            font-size: 4.8vw;
+            }
+        }
+
+        .page-footer {
+        background: #fdd835 !important;
+    }
+
+    </style>
+</head>
+<body>
+<!-- /* NAVBAR */ -->
+    <div class="navbar-fixed">
+        <nav class="black nav-wrapper">
+            <a href="/index1.html" class="brand-logo"><img src="img/logo.png" alt="kawasaki"></a>
+
+            <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile"class="right hide-on-med-and-down">
+
+                <li><a href="/index1.html" class="btn black">HOME
+                </a></li>
+
+                <li><a href="/index2.html" class="btn black modal-trigger">CRUISER
+                </a></li>
+
+                <li><a href="/index3.html" class="btn black modal-trigger">SPORT
+                </a></li>
+
+                <li><a href="/index4.html" class="btn black modal-trigger">TOURING
+                </a></li>
+            </ul>
+    </div>
+<!-- /* SIDE NAV    */ -->
+            <ul class="sidenav gray" id="mobile-menu">
+
+                <li><a href="/index1.html" class="btn black">HOME
+                </a></li>
+
+                <li><a href="/index2.html" class="btn black modal-trigger">CRUISER
+                </a></li>
+
+                <li><a href="/index3.html" class="btn black modal-trigger">SPORT
+                </a></li>
+
+                <li><a href="/index4.html" class="btn black modal-trigger">TOURING
+                </a></li>
+
+                <li><a href="#" class="btn sidenav-close red">CLOSE
+                    <i class="material-icons right">close</i>
+                </a></li>
+
+            </ul>
+        </nav>
+
+<!-- BANNER -->
+<header>
+    <section class="banner">
+        <img src="img/banner.jpg" alt="">
+        <div class="quote white-text">
+        <h1 class="z-depth-4">Yesterday, today, tomorrow;<br><span>every day is a ride.</span></h1>
+        </div>         
+    </section>
+</header>
+
+<!-- KAWASAKI -->
+            <div class="row row_kawasaki black">
+                <div class="col s6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/h2.jpg" alt="">
+                            <a class="btn-floating halfway-fab green white-text" onclick="playh2()" href="#Ninja h2 audio">
+                                <i class="material-icons right">play_circle_filled</i>
+                            </a>
+                        </div>
+                        <div class="card-content black green-text">
+                            <span class="card-title">THE KAWASAKI NINJA H2R</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <audio id="Ninja h2 audio" src="audio/Ninja H2 Cold Start.mp3"></audio>
+
+                <div class="col s6 l4  hide-on-med-and-down logo">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/kawasaki-logo.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col s6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/ninja bike.jpg" alt="">
+                            <a class="btn-floating halfway-fab green white-text "onclick="playZX10R()" href="#Ninja ZX 10R Audio">
+                                <i class="material-icons right">play_circle_filled</i>
+                            </a>
+                        </div>
+                        <div class="card-content black green-text">
+                            <span class="card-title">KAWASAKI NINJA 1000SX</span>
+                        </div>   
+                    </div>
+                </div>
+                <audio id="Ninja ZX 10R Audio" src="audio/2022 Kawasaki Ninja ZX 10R Cold Start .mp3"></audio>
+            </div>
+
+<div class="black">  
+    <section class="container section" id="photos">
+        <div class="row">
+                <div class="col s12 l4 white">
+                    <img src="img/Kawasaki 1000.png" alt="" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                    <h2 class="white-text">KAWASAKI NINJA 1000SX</h2>
+                    <a class="waves-effect waves-light btn green modal-trigger " href="#Ninja 1000">SHOW SPECS</a>
+                </div>
+        </div>
+
+        <ul class="modal" id="Ninja 1000">
+            <div class="collection"> 
+                <li class="collection-item center">
+                    <span class="title center">
+                        <span class="btn right modal-close white">
+                            <i class="material-icons black-text">close</i>
+                        </span>
+                        <img src="img/Kawasaki 1000.png" alt="">
+                        <h3 class="green-text">KAWASAKI NINJA 1000SX</h3>
+                    </span>
+                        <ul class="specs left-align">
+                            <H6>
+                                <li>Kawasaki Quick Shifter (KQS)</li>
+                                <br>
+                                <li>Kawasaki TRaction Control</li>
+                                <br>
+                                <li>Kawasaki Cornering Management Function</li>
+                                <br>
+                                <li>Kawasaki Intelligent anti-lock Brake System (KIBS)</li>
+                                <br>
+                                <li>Electronic Throttle Valves</li>
+                                <br>
+                                <li>Integrated Riding Mode</li>
+                                <br>
+                                <li>Power Mode selection</li>
+                                <br>
+                                <li>Assist and slipper clutch</li>
+                                <br>
+                                <li>Electronic Cruise Control</li>
+                                <br>
+                                <li>ECU tuning</li>
+                                <br>
+                                <li>All-digital TFT color instrumentation</li>
+                                <br>
+                                <li>Smartphone Connectivity via RIDEOLOGY THE APP</li>
+                                <br>
+                                <li>Bridgestone BATTALAX Hypersport S22 Tires</li>
+                            </H6>
+                        </ul>     
+                </li>   
+            </div>
+        </ul>
+<br>
+<div class="row">
+        <div class="col s12 l4 offset-l1 push-l7 white">
+            <img src="img/Kawasaki H2png.png" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+            <h2 class="white-text">THE KAWASAKI NINJA H2R</h2>
+            <a class="waves-effect waves-light btn green modal-trigger " href="#Kawasaki H2">SHOW SPECS</a>
+        </div>
+</div>
+                        <ul class="modal" id="Kawasaki H2">
+                            <div class="collection"> 
+                                <li class="collection-item center"> 
+                                    <span class="btn right modal-close white">
+                                        <i class="material-icons black-text">close</i>
+                                    </span>                                  
+                                    <span>
+                                            <img src="img/Kawasaki H2png.png" alt="">
+                                            <h3 class="green-text">THE KAWASAKI NINJA H2R</h3>
+                                    </span>
+                                        <ul class="specs left-align">
+                                            <H6>
+                                                <li>Street legal hypersport performance</li>
+                                                <br>
+                                                <li>Bosch IMU with Kawasaki's dynamic modeling software</li>
+                                                <br>
+                                                <li>KYB AOS-II front fork and Öhlins TTX36 rear shock</li>
+                                                <br>
+                                                <li>Kawasaki Quick Shifter (KQS)</li>
+                                                <br>
+                                                <li>Kawasaki TRaction Control (KTRC–9 modes)</li>
+                                                <br>
+                                                <li>Kawasaki Intelligent anti-lock Brake System (KIBS)</li>
+                                                <br>
+                                                <li>Kawasaki Launch Control Mode (KLCM)</li>
+                                                <br>
+                                                <li>Kawasaki Engine Brake Control (KEBC)</li>
+                                                <br>
+                                                <li>All LED lighting</li>
+                                                <br>
+                                                <li>Bridgestone Battlax RS11 sport tires</li>
+                                                <br>
+                                                <li>Smartphone Connectivity via RIDEOLOGY THE APP</li>
+                                                <br>
+                                                <li>All-Digital TFT color instrumentation</li>
+                                                <br>
+                                            </H6>
+                                        </ul>     
+                                    </li>   
+                             </div>
+                        </ul>
+
+
+<div class="row">
+        <div class="col s12 l4 white">
+            <img src="img/Vulcan.png" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h2 class="white-text">KAWASAKI VULCAN S 900</h2>
+            <a class="waves-effect waves-light btn green modal-trigger " href="#Vulcan">SHOW SPECS</a>
+        </div>
+</div>
+
+                    <ul class="modal" id="Vulcan">
+                        <div class="collection"> 
+                            <li class="collection-item center">
+                                <span class="title center">
+                                    <span class="btn right modal-close white">
+                                        <i class="material-icons black-text">close</i>
+                                    </span>
+                                    <img src="img/Vulcan.png" alt="">
+                                    <h3 class="green-text">KAWASAKI VULCAN S 900</h3>
+                                </span>
+                                    <ul class="specs left-align">
+                                        <H6>
+                                            <li>649cc, liquid-cooled, 4-stroke, DOHC 8-valve parallel twin</li>
+                                            <br>
+                                            <li>Power 50 Hp</li>
+                                            <br>
+                                            <li>Bore x Stroke 83.0 x 60.0mm</li>
+                                            <br>
+                                            <li>Compression Ratio	
+                                                10.8:1</li>
+                                            <br>
+                                            <li>Fuel System	Fuel injection: ø38 mm x 2 with dual throttle valves</li>
+                                            <br>
+                                            <li>Starter	Electric</li>
+                                            <br>
+                                            <li>Lubrication	Forced lubrication, semi-dry sump</li>
+                                            <br>
+                                            <li>Wet multi-disc, manual</li>
+                                            <br>
+                                            <li>6-speed, return</li>
+                                            <br>
+                                        </H6>
+                                    </ul>     
+                                </li>   
+                        </div>
+                    </ul>
+            </section>
+    </div>
+<br>
+
+<!-- HONADA -->
+            <div class="row row_honda black">
+                <div class="col s6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/CB650.jpg" alt="">
+                            <a class="btn-floating halfway-fab red white-text " onclick="playCB650()" href="#CB650 Audio">
+                                <i class="material-icons right">play_circle_filled</i>
+                            </a>
+                        </div>
+                        <div class="card-content black red-text">
+                            <span class="card-title">2023 HONDA CB650R</span>
+                        </div>
+                    </div>
+                    <audio id="CB650 Audio" src="audio/HONDA cb650 .mp3"></audio> 
+                </div>
+
+                <div class="col s6 l4  hide-on-med-and-down honda_logo">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/honda logo.png" alt="">
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col s6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/CBR1000.jpg" alt="">
+                            <a class="btn-floating halfway-fab red white-text "onclick="playCBR1000()"  href="#CBR1000 Audio">
+                                <i class="material-icons right">play_circle_filled</i>
+                            </a>
+                        </div>
+                        <div class="card-content black red-text">
+                            <span class="card-title">2023 HONDA CBR1000RR</span>
+                        </div>   
+                    </div>
+                </div>
+                <audio id="CBR1000 Audio" src="audio/Cbr1000rr .mp3"></audio> 
+            </div>
+
+<div class="black">  
+        <section class="container section" id="photos">
+                <div class="row">
+                        <div class="col s12 l4 white">
+                            <img src="img/honda cbr 1000.png" alt="" class="responsive-img materialboxed">
+                        </div>
+                        <div class="col s12 l6 offset-l1">
+                            <h2 class="white-text">2023 HONDA CBR1000RR</h2>
+                            <a class="waves-effect waves-light btn red modal-trigger " href="#Cbr1000">SHOW SPECS</a>
+                        </div>
+                </div>
+
+                <ul class="modal" id="Cbr1000">
+                    <div class="collection"> 
+                        <li class="collection-item center">
+                            <span class="title center">
+                                <span class="btn right modal-close white">
+                                    <i class="material-icons black-text">close</i>
+                                </span>
+                                <img src="img/honda cbr 1000.png" alt="">
+                                <h3 class="red-text">KAWASAKI NINJA 1000SX</h3>
+                            </span>
+                                <ul class="specs left-align">
+                                    <H6>
+                                        <li>Engine: 998cc, four-stroke.</li>
+                                        <br>
+                                        <li>Power: 184 HP.</li>
+                                        <br>
+                                        <li>KMileage: 38 mpg (16.2 km/l)</li>
+                                        <br>
+                                        <li>Transmission: 6-speed.</li>
+                                        <br>
+                                        <li>Fuel Tank Capacity: 4.3 gal. ( 16.3 l)</li>
+                                        <br>
+                                        <li>Seat Height: 32.8 in. ( 833 mm)</li>
+                                        <br>
+                                        <li>Curb Weight: 443 lb. ( 201 kg)</li>
+                                    </H6>
+                                </ul>     
+                            </li>   
+                     </div>
+                </ul>
+
+                <div class="row">
+                        <div class="col s12 l4 offset-l1 push-l7 white">
+                            <img src="img/Honda Cb650r.png" alt="" class="responsive-img materialboxed">
+                        </div>
+                        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                            <h2 class="white-text">2023 HONDA CB650R</h2>
+                            <a class="waves-effect waves-light btn red modal-trigger " href="#CB650R">SHOW SPECS</a>
+                        </div>
+                </div>
+                        <ul class="modal" id="CB650R">
+                            <div class="collection"> 
+                                <li class="collection-item center">
+                                    <span class="btn right modal-close white">
+                                        <i class="material-icons black-text">close</i>
+                                    </span>                                   
+                                    <span>
+                                            <img src="img/Honda Cb650r.png" alt="">
+                                            <h3 class="red-text">2023 HONDA CB650R</h3>
+                                    </span>
+                                        <ul class="specs left-align">
+                                            <H6>
+                                                <li>649cc liquid cooled in-line four cylinder</li>
+                                                <br>
+                                                <li>95 BHP</li>
+                                                <br>
+                                                <li>67mm x 46mm</li>
+                                                <br>
+                                                <li>11.6:1</li>
+                                                <br>
+                                                <li>PGM-FI with 32mm throttle bodies</li>
+                                                <br>
+                                                <li>DOHC; four valves per cylinder</li>
+                                                <br>
+                                                <li>Six-speed</li>
+                                                <br>
+                                                <li>41mm fork; 4.3 inches of travel</li>
+                                                <br>
+                                                <li>Showa Single Shock; 5.0 inches of travel</li>
+                                                <br>
+                                                <li>Dual 310mm discs with radial-mount four-piston calipers; ABS</li>
+                                                <br>
+                                                <li>Single 240mm disc; ABS</li>
+                                                <br>
+                                                <li>4.1 gallons, including 0.8-gallon reserve</li>
+                                                <br>
+                                            </H6>
+                                        </ul>     
+                                    </li>   
+                             </div>
+                        </ul>
+
+
+            <div class="row">
+                    <div class="col s12 l4 white">
+                        <img src="img/HONDA REBEL.png" alt="" class="responsive-img materialboxed">
+                    </div>
+                    <div class="col s12 l6 offset-l1">
+                        <h2 class="white-text">2023 HONDA REBEL 500</h2>
+                        <a class="waves-effect waves-light btn red modal-trigger " href="#Honda Rebel">SHOW SPECS</a>
+                    </div>
+            </div>
+
+                    <ul class="modal" id="Honda Rebel">
+                        <div class="collection"> 
+                            <li class="collection-item center">
+                                <span class="title center">
+                                    <span class="btn right modal-close white">
+                                        <i class="material-icons black-text">close</i>
+                                    </span>
+                                    <img src="img/HONDA REBEL.png" alt="">
+                                    <h3 class="red-text">2023 HONDA REBEL 500</h3>
+                                </span>
+                                    <ul class="specs left-align">
+                                        <H6>
+                                            <li>471cc liquid-cooled parallel-twin four-stroke</li>
+                                            <br>
+                                            <li>45.9 HP</li>
+                                            <br>
+                                            <li>67mm x 66.8mm</li>
+                                            <br>
+                                            <li>10.7:1</li>
+                                            <br>
+                                            <li>Programmed Fuel Injection (PGM-FI); 34mm throttle body</li>
+                                            <br>
+                                            <li>Starter	Electric</li>
+                                            <br>
+                                            <li>SOHC; 4 valves per cylinder</li>
+                                            <br>
+                                            <li>Six-speed</li>
+                                            <br>
+                                            <li>O-ring-sealed chain; 15T/40T</li>
+                                            <br>
+                                        </H6>
+                                    </ul>     
+                                </li>   
+                        </div>
+                    </ul>
+            </section>
+    </div>
+<br>           
+ 
+<!-- YAMAHA -->
+<div class="row row_yamaha black">
+    <div class="col s6 l4">
+        <div class="card">
+            <div class="card-image">
+                <img src="img/Yamaha R1jpg.jpg" alt="">
+                <a class="btn-floating halfway-fab blue white-text " onclick="playR1()" href="#Yamaha R1 Audio">
+                    <i class="material-icons right">play_circle_filled</i>
+                </a>
+            </div>
+            <div class="card-content black blue-text">
+                <span class="card-title">2023 YAMAHA YZF R1 1000</span>
+            </div>
+        </div>
+        <audio id="Yamaha R1 Audio" src="audio/Yamaha R1.mp3"></audio>
+    </div>
+
+    <div class="col s6 l4  hide-on-med-and-down yamaha_logo">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/yamaha logo.png" alt="">
+                </div>
+            </div>
+    </div>
+
+    <div class="col s6 l4">
+        <div class="card">
+            <div class="card-image">
+                <img src="img/wallpaperbetter.jpg" alt="">
+                <a class="btn-floating halfway-fab blue white-text" onclick="playMT10SP()" href="#Yamaha MT10SP Audio">
+                    <i class="material-icons right">play_circle_filled</i>
+                </a>
+            </div>
+            <div class="card-content black blue-text">
+                <span class="card-title">2023 YAMAHA MT-10 SP</span>
+            </div>   
+        </div>
+    </div>
+    <audio id="Yamaha MT10SP Audio" src="audio/Yamaha MT10SP .mp3"></audio>
+</div>
+
+<div class="black">  
+    <section class="container section" id="photos">
+            <div class="row">
+                    <div class="col s12 l4 white">
+                        <img src="img/Yamaha Mt10.png" alt="" class="responsive-img materialboxed">
+                    </div>
+                    <div class="col s12 l6 offset-l1">
+                        <h2 class="white-text">2023 YAMAHA MT-10 SP</h2>
+                        <a class="waves-effect waves-light btn blue modal-trigger " href="#Mt10">SHOW SPECS</a>
+                    </div>
+            </div>
+
+            <ul class="modal" id="Mt10">
+                <div class="collection"> 
+                    <li class="collection-item center">
+                        <span class="title center">
+                            <span class="btn right modal-close white">
+                                <i class="material-icons black-text">close</i>
+                            </span>
+                            <img src="img/Yamaha Mt10.png" alt="">
+                            <h3 class="blue-text">2023 YAMAHA MT-10 SP</h3>
+                        </span>
+                            <ul class="specs left-align">
+                                <H6>
+                                    <li>649cc liquid cooled in-line four cylinder</li>
+                                            <br>
+                                            <li>95 BHP</li>
+                                            <br>
+                                            <li>67mm x 46mm</li>
+                                            <br>
+                                            <li>11.6:1</li>
+                                            <br>
+                                            <li>PGM-FI with 32mm throttle bodies</li>
+                                            <br>
+                                            <li>DOHC; four valves per cylinder</li>
+                                            <br>
+                                            <li>Six-speed</li>
+                                            <br>
+                                            <li>41mm fork; 4.3 inches of travel</li>
+                                            <br>
+                                            <li>Showa Single Shock; 5.0 inches of travel</li>
+                                            <br>
+                                            <li>Dual 310mm discs with radial-mount four-piston calipers; ABS</li>
+                                            <br>
+                                            <li>Single 240mm disc; ABS</li>
+                                            <br>
+                                            <li>4.1 gallons, including 0.8-gallon reserve</li>
+                                </H6>
+                            </ul>     
+                        </li>   
+                    </div>
+            </ul>
+
+            <div class="row">
+                    <div class="col s12 l4 offset-l1 push-l7 white">
+                        <img src="img/Yamaha R1 1000.png" alt="" class="responsive-img materialboxed">
+                    </div>
+                    <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                        <h2 class="white-text">2023 YAMAHA YZF R1 1000</h2>
+                        <a class="waves-effect waves-light btn blue modal-trigger " href="#YZF R1">SHOW SPECS</a>
+                    </div>
+            </div>
+                    <ul class="modal" id="YZF R1">
+                        <div class="collection"> 
+                            <li class="collection-item center">
+                                <span class="btn right modal-close white">
+                                    <i class="material-icons black-text">close</i>
+                                </span>                                   
+                                <span>
+                                        <img src="img/Yamaha R1 1000.png" alt="">
+                                        <h3 class="blue-text">2023 YAMAHA YZF R1 1000</h3>
+                                </span>
+                                    <ul class="specs left-align">
+                                        <H6>
+                                            <li>Engine: 998cc, four-stroke.</li>
+                                            <br>
+                                            <li>Power: 184 HP.</li>
+                                            <br>
+                                            <li>KMileage: 38 mpg (16.2 km/l)</li>
+                                            <br>
+                                            <li>Transmission: 6-speed.</li>
+                                            <br>
+                                            <li>Fuel Tank Capacity: 4.3 gal. ( 16.3 l)</li>
+                                            <br>
+                                            <li>Seat Height: 32.8 in. ( 833 mm)</li>
+                                            <br>
+                                            <li>Curb Weight: 443 lb. ( 201 kg)</li>
+                                            <br>
+                                        </H6>
+                                    </ul>     
+                                </li>   
+                            </div>
+                    </ul>
+
+
+        <div class="row">
+                <div class="col s12 l4 white">
+                    <img src="img/Super Tenere Es.png" alt="" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                    <h2 class="white-text">2023 SUPER TÉNÉRÉ ES</h2>
+                    <a class="waves-effect waves-light btn blue modal-trigger " href="#Tenere">SHOW SPECS</a>
+                </div>
+        </div>
+
+                <ul class="modal" id="Tenere">
+                    <div class="collection"> 
+                        <li class="collection-item center">
+                            <span class="title center">
+                                <span class="btn right modal-close white">
+                                    <i class="material-icons black-text">close</i>
+                                </span>
+                                <img src="img/Super Tenere Es.png" alt="">
+                                <h3 class="blue-text">2023 SUPER TÉNÉRÉ ES</h3>
+                            </span>
+                                <ul class="specs left-align">
+                                    <H6>
+                                        <li>471cc liquid-cooled parallel-twin four-stroke</li>
+                                        <br>
+                                        <li>45.9 HP</li>
+                                        <br>
+                                        <li>67mm x 66.8mm</li>
+                                        <br>
+                                        <li>10.7:1</li>
+                                        <br>
+                                        <li>Programmed Fuel Injection (PGM-FI); 34mm throttle body</li>
+                                        <br>
+                                        <li>Starter	Electric</li>
+                                        <br>
+                                        <li>SOHC; 4 valves per cylinder</li>
+                                        <br>
+                                        <li>Six-speed</li>
+                                        <br>
+                                        <li>O-ring-sealed chain; 15T/40T</li>
+                                        <br>
+                                    </H6>
+                                </ul>     
+                            </li>   
+                    </div>
+                </ul>
+        </section>
+</div>
+<br>
+
+<!-- KTM -->
+<div class="row row_KTM black">
+    <div class="col s6 l4">
+        <div class="card">
+            <div class="card-image">
+                <img src="img/KTM 1290 Super Duke R 14.jpg" alt="">
+                <a class="btn-floating halfway-fab orange white-text " onclick="playKTM1290()" href="#KTM 1290 Audio">
+                    <i class="material-icons right">play_circle_filled</i>
+                </a>
+            </div>
+            <div class="card-content black orange-text">
+                <span class="card-title">2023 KTM 1290 SUPER DUKE R</span>
+            </div>
+        </div>
+        <audio id="KTM 1290 Audio" src="audio/2023 KTM 1290 SUPER DUKE R.mp3"></audio>
+    </div>
+
+    <div class="col s6 l4  hide-on-med-and-down ktm_logo">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/ktm logo.png" alt="">
+                </div>
+            </div>
+    </div>
+
+    <div class="col s6 l4">
+        <div class="card">
+            <div class="card-image">
+                <img src="img/KTM 790 Duke.png" alt="">
+                <a class="btn-floating halfway-fab orange white-text " onclick="playKTM790()" href="#KTM 790 Audio">
+                    <i class="material-icons right">play_circle_filled</i>
+                </a>
+            </div>
+            <div class="card-content black orange-text">
+                <span class="card-title">2023 KTM 790 DUKE</span>
+            </div>   
+        </div>
+        <audio id="KTM 790 Audio" src="audio/KTM 790 Duke.mp3"></audio>
+    </div>
+</div>
+
+<div class="black">  
+    <section class="container section" id="photos">
+            <div class="row">
+                    <div class="col s12 l4 white">
+                        <img src="img/2023-KTM-1290-Super-Duke-R.png" alt="" class="responsive-img materialboxed">
+                    </div>
+                    <div class="col s12 l6 offset-l1">
+                        <h2 class="white-text">2023 KTM 1290 SUPER DUKE R</h2>
+                        <a class="waves-effect waves-light btn orange darken-3 modal-trigger " href="#Super duke">SHOW SPECS</a>
+                    </div>
+            </div>
+
+            <ul class="modal" id="Super duke">
+                <div class="collection"> 
+                    <li class="collection-item center">
+                        <span class="title center">
+                            <span class="btn right modal-close white">
+                                <i class="material-icons black-text">close</i>
+                            </span>
+                            <img src="img/2023-KTM-1290-Super-Duke-R.png" alt="">
+                            <h3 class="orange-text">2023 KTM 1290 SUPER DUKE R</h3>
+                        </span>
+                            <ul class="specs left-align">
+                                <H6>
+                                    <li>1301cc, 2-cylinder, 4-stroke, V 75°.</li>
+                                    <br>
+                                    <li>Power: 171 hp</li>
+                                    <br>
+                                    <li>108 mm x 71 mm</li>
+                                    <br>
+                                    <li>TKeihin EMS with RBW and cruise control, double ignition</li>
+                                    <br>
+                                    <li>132 kW</li>
+                                    <br>
+                                    <li>Electric starter</li>
+                                    <br>
+                                    <li>6-speed</li>
+                                </H6>
+                            </ul>     
+                        </li>   
+                    </div>
+            </ul>
+
+            <div class="row">
+                    <div class="col s12 l4 offset-l1 push-l7 white">
+                        <img src="img/2023 KTM 790 DUKE.png" alt="" class="responsive-img materialboxed">
+                    </div>
+                    <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                        <h2 class="white-text">2023 KTM 790 DUKE</h2>
+                        <a class="waves-effect waves-light btn orange darken-3 modal-trigger " href="#790 DUKE">SHOW SPECS</a>
+                    </div>
+            </div>
+                    <ul class="modal" id="790 DUKE">
+                        <div class="collection"> 
+                            <li class="collection-item center">   
+                                <span class="btn right modal-close white">
+                                    <i class="material-icons black-text">close</i>
+                                </span>                                
+                                <span>
+                                        <img src="img/2023 KTM 790 DUKE.png" style="width: auto; height: auto;" alt="">
+                                        <h3 class="orange-text">2023 KTM 790 DUKE</h3>
+                                </span>
+                                    <ul class="specs left-align">
+                                        <H6>
+                                            <li>Displacement: 799cc.</li>
+                                            <br>
+                                            <li>Bore x stroke: 88mm x 65.7mm.</li>
+                                            <br>
+                                            <li>Maximum power: 105 horsepower @ 9000 rpm.m</li>
+                                            <br>
+                                            <li>Maximum torque: 64 ft-lbs @ 8000 rpm.</li>
+                                            <br>
+                                            <li>Compression ratio: 12.7:1.</li>
+                                            <br>
+                                            <li>Valvetrain: DOHC, 8 valves.</li>
+                                            <br>
+                                            <li>Fueling: DKK Dell'Orto w/ 42mm throttle body.</li>
+                                            <br>
+                                            <li>Lubrication: Semi-dry sump</li>
+                                            <br>
+                                            <li>Transmission: 6-speed (quickshifter optional)</li>
+                                            <br>
+                                            <li>Clutch: Wet multiplate w/ assist and slip functions</li>
+                                            <br>
+                                            <li>Final drive: X-ring chain</li>
+                                            <br>
+                                        </H6>
+                                    </ul>     
+                                </li>   
+                            </div>
+                    </ul>
+        <div class="row">
+                <div class="col s12 l4 white">
+                    <img src="img/KTM 790 Adventure S .png" alt="" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                    <h2 class="white-text">2023 KTM 790 Adventure S</h2>
+                    <a class="waves-effect waves-light btn orange darken-3 modal-trigger " href="#790 Adventure">SHOW SPECS</a>
+                </div>
+        </div>
+
+                <ul class="modal" id="790 Adventure">
+                    <div class="collection"> 
+                        <li class="collection-item center">
+                            <span class="title center">
+                                <span class="btn right modal-close white">
+                                    <i class="material-icons black-text">close</i>
+                                </span>
+                                <img src="img/KTM 790 Adventure S .png" alt="">
+                                <h3 class="orange-text">2023 KTM 790 Adventure S</h3>
+                            </span>
+                                <ul class="specs left-align">
+                                    <H6>
+                                        <li>2-cylinder, 4-stroke, DOHC Parallel twin</li>
+                                        <br>
+                                        <li>799 cc</li>
+                                        <br>
+                                        <li>88 / 65.7 mm</li>
+                                        <br>
+                                        <li>95 hp (70 kW) @ 8,000 rpm</li>
+                                        <br>
+                                        <li>64.9 ft-lbs (88 Nm) @ 6,600 rpm</li>
+                                        <br>
+                                        <li>12.7:1</li>
+                                        <br>
+                                        <li>Electric /12V 10Ah</li>
+                                        <br>
+                                        <li>6 gears</li>
+                                        <br>
+                                        <li>DKK Dell’Orto (Throttle body 46 mm)</li>
+                                        <br>
+                                    </H6>
+                                </ul>     
+                            </li>   
+                    </div>
+                </ul>
+        </section>
+</div>
+
+<section class="ffooter">
+	<footer class="page-footer">
+        <div class="container">
+            <div class="row">
+				<div class="col l6 s12">
+                	<h4 class="black-text">Contact Us</h4>
+               	    <p class="black-text">123 Anywhere St., Any City, ST 12345</p>
+                    <p class="black-text">Phone : +631234567892</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                	<h4 class="black-text">Social Media Links</h4>
+                	  <ul>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Facebook</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Instagram</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Twitter</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Whatsapp</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Telegram</a></li>
+                	  </ul>
+                </div>
+            </div>
+       </div>
+
+    		<<div class="footer-copyright">
+            	<div class="container black-text">
+            		© 2023 Copyright @ WorldofSpeed
+            			<a class="black-text right" href="#!">WE ARE SPEED <span><i class="tiny material-icons">motorcycle</i></span></a>
+               </div>
+            </div>
+    </footer>
+</section> 
+
+    <script src="js/jsquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $(".modal").modal();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+        });
+
+        function playh2() {
+            var Ninjah2 = document.getElementById("Ninja h2 audio");
+            Ninjah2.play();  
+        }
+        
+        function playZX10R() { 
+            var ZX10R = document.getElementById("Ninja ZX 10R Audio");
+            ZX10R.play();
+        }
+        function playCBR1000() { 
+            var z = document.getElementById("CBR1000 Audio");
+            z.play();
+        }
+        
+        function playCB650() { 
+            var a = document.getElementById("CB650 Audio");
+            a.play();
+        }
+
+        function playR1() {
+            var b = document.getElementById("Yamaha R1 Audio");
+            b.play();
+        }
+
+        function playMT10SP() { 
+        var c = document.getElementById("Yamaha MT10SP Audio");
+            c.play();
+        }
+        function playKTM1290(){
+            var d = document.getElementById("KTM 1290 Audio");
+            d.play();
+        }
+        function playKTM790(){
+            var e = document.getElementById("KTM 790 Audio");
+            e.play();
+        }
+    </script>
+
+</body>
+</html>

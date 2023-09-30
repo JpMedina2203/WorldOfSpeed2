@@ -1,0 +1,491 @@
+<html lang="en">
+<head>
+     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified CSS -->
+
+    <style> 
+        .brand-logo img {
+        position: absolute;
+        width: 400px;
+        height: 60px;
+        padding-top: 8px;
+        padding-left: 0px;
+
+    }
+    .row{
+        margin: none;
+    }
+
+    .row_kawasaki{
+        border: 5px solid #00e676;
+    }
+    .row_honda{
+        border: 5px solid#e53935;
+    }
+    .row_yamaha{
+        border: 5px solid#1565c0
+    }
+    .row_ktm{
+        border: 5px solid#ff8f00;
+    }
+    .collection-item img{  
+        width: 350px;
+      height: 200px;
+      position:relative;
+    }
+
+    .section{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    }
+
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+    .banner .quote{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        border-radius: 40px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color:#b71c1c;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    } 
+
+    .banner .quote span{
+        font-size: 1.4em;
+    }
+
+    ul.specs{
+        list-style-type: square;
+    }
+    @media (min-width: 1025px) and (max-width: 1280px){
+    .logo img{
+        height: 25vw;
+    }
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.5vw;
+        }
+        
+
+    .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 25vw;
+            height: 5vw;          
+            left: 1vw;
+    }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+        .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 40vw;
+            height: 6vw;          
+            left: 7vw;
+    } 
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.8vw;
+        }
+
+    }
+    
+@media (min-width: 481px) and (max-width: 767px) {
+    .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 50vw;
+            height: 8vw;          
+            left: 3vw;
+    }
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.8vw;
+        }
+    }
+
+@media (max-width: 480px) {
+    .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 50vw;
+            height: 11vw;          
+            left: 8vw;
+    }
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.8vw;
+        }
+    }
+
+    .row > div{
+            border: 4x solid transparent;
+            line-height: 20px;
+        }
+    .page-footer {
+        background: #fdd835 !important;
+    }
+
+</style>
+
+</head>
+<body class="black">
+
+
+<!-- /* NAVBAR */ -->
+<div class="navbar-fixed">
+    <nav class="black nav-wrapper">
+        <a href="/index1.html" class="brand-logo"><img src="img/logo.png" alt="kawasaki"></a>
+
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile"class="right hide-on-med-and-down">
+            
+            <li><a href="/index1.html" class="btn black">HOME
+            </a></li>
+
+            <li><a href="/index2.html" class="btn black modal-trigger">CRUISER
+            </a></li>
+
+            <li><a href="/index3.html" class="btn black modal-trigger">SPORT
+            </a></li>
+
+            <li><a href="/index4.html" class="btn black modal-trigger">TOURING
+            </a></li>
+
+        </ul>
+</div>
+<!-- /* SIDE NAV    */ -->
+        <ul class="sidenav gray" id="mobile-menu">
+
+            <li><a href="/index1.html" class="btn black">HOME
+            </a></li>
+
+            <li><a href="/index2.html" class="btn black modal-trigger">CRUISER
+            </a></li>
+
+            <li><a href="/index3.html" class="btn black modal-trigger">SPORT
+            </a></li>
+
+            <li><a href="/index4.html" class="btn black modal-trigger">TOURING
+            </a></li>
+
+            <li><a href="#" class="btn sidenav-close red">CLOSE
+                <i class="material-icons right">close</i>
+            </a></li>
+        </ul>
+    </nav>
+
+
+<header>
+    <div class="parallax-container hide-on-med-and-down" style="height: 500px; width: 100%;">
+        <div class="parallax">
+            <img src="super/Super Bike Logo.png">
+        </div>
+    </div>
+
+    <section class="banner hide-on-large-only">
+        <img src="super/Super Bike Logo.png" alt="">
+    </section>
+
+</header>
+<br>
+<div>
+    <div class="row black">
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="super/2022-honda-cbr150r.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border: 3px solid #fdd835;">
+                    <span class="card-title activator">Honda CBR150R
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW
+                        <i class="material-icons right">close</i>
+                    </span>
+                        <p>
+                            <H5>
+                                The Honda CBR150R is born out of MotoGP DNA. This sport bike was updated in 2021, and comes in one ABS variant. Honda also says it has advanced features for its class. Price is set at P159,900.
+                                <br><br>
+                                Both variants share some attractive features such as a visor, twin LED headlights and taillight, and a fully digital instrument panel. Meanwhile, adjustable suspension for preload on both wheels underpins the CBR150R models.
+                                <br><br>
+                                Powering the bike is a liquid-cooled, DOHC, 149cc engine with four-strokes and four-valves. The mill ekes out 17 hp and 14 Nm of torque, both of which are managed by a 6-speed manual transmission.
+                                <br><br>
+                                Both CBR150R variants are fitted with disc stoppers on both wheels and a two-channel Anti-lock Braking System (ABS).                              
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="super/2020-kawasaki-zx-14r.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator">2023 Kawasaki Ninja ZX-14R
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                One of Kawasaki’s high-performance models is the Ninja ZX-14R. With its cool-looking design, well-built body, superb performance, and great aerodynamics, this super sport bike is deserving enough to be named as the brand’s ‘King of Sport Bikes’. This versatile motorbike is tagged at P910,000.
+                                <br><br>
+                                Long-distance travel is made possible with its 22-liter fuel tank. Safety features include Anti-lock Braking System (ABS), cornering ABS, traction control, slipper clutch, and immobilizer. This might motorbike is also equipped with the Brembo braking system, complemented with Ohlins suspension for the excellent feedback, bump absorption, and stability during high speeds.
+                                <br><br>
+                                Riding on its 17-inch wheels, the Ninja ZX-14R is powered by a 1,441cc liquid-cooled 4-stroke, DOHC gasoline engine that can deliver a maximum output of 197 hp and 158 Nm of torque. This engine is then connected to a 6-speed manual gearbox.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="super/2021-yamaha-mt-07.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 Yamaha MT-07
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                Being one of the base models of its respective family lineup, the Yamaha MT-07 700 is a sport bike which manages to deliver the same performance DNA injected on its MT siblings. Locally, there’s only one ABS variant available which retails at P459,000. Buyers can choose between two colors only, namely in Black or Gray.
+                                <br><br>
+                                Standard features of this motorcycle includes the basics, such as halogen headlight and LED tail light. Moreover, you also get a modernly laid out digital gauges and sporty appointments including its aggressive intake scoops.
+                                <br><br>
+                                Its beating heart is a 689cc liquid-cooled, 4-stroke, DOHC engine which produces a healthy 74 hp and 68 Nm of torque. This engine is then paired with a 6-speed manual transmission.
+                                <br><br>
+                                The Yamaha MT-07 comes standard with a generous amount of features, including a pass switch, Anti-lock Braking System (ABS), slipper clutch, and immobilizer.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="super/ducati-supersport-s.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 Ducati SuperSport 950
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                The Ducati SuperSport S is a suitable everyday two-wheeler, with its blend of comfort and versatility. Locally launched last 2018, this super sport bike has a sporty yet elegant design that’s sure to turn heads. For the Philippine market, this bike is made available with only one ABS variant. Prices may vary depending on which color you are to purchase, specifically ranging from P1,105,000 to P1,115,000.
+                                <br><br>
+                                Several design elements accentuate the overall sportiness and elegance of this bike, including its sculpted tank and the single-sided swingarm. Other standard features include a quick shifter, different riding modes, halogen headlamp, a digital gauge, and LED tail lamp and indicators.
+                                <br><br>
+                                Its beating heart is a 937cc Testastretta 11 deg L-Twin, liquid-cooled, Desmodromic Distribution engine, producing a mighty 110 hp and 93 Nm of torque. This mill is then paired with a 6-speed manual transmission.
+                                <br><br>
+                                Safety and security features of the Ducati SuperSport S include Anti-lock Braking System (ABS), traction control, slipper clutch, immobilizer, steering damper, and a pass switch.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="super/kawasaki-zx-25rwebp.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 Kawasaki ZX-25R
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                    <p>
+                        <H5>
+                            The Kawasaki ZX-25R is the latest addition to the Ninja sportbike lineup following the same visual aesthetics of its bigger siblings with an aggressive riding position and Kawasaki racing livery designed to make a statement in the race track. This high-revving inline-4 sportbike was officially launched in the Philippines on July 31, 2020.
+                            <br><br>
+                            The ZX-25R harks back to the powerful inline-4 engines that powered legendary Kawasaki sportbikes in the past decades but in a more compact and updated package. It comes with 37 mm Showa SFF Big Piston adjustable inverted forks in the front and a horizontal preload-adjustable backlink mono-shock in the rear. Stopping duties are provided for by a 310 mm brake disk with a four-piston caliper for the front and a 220 mm disc with a single-piston caliper for the rear.
+                            <br><br>
+                            This Kawasaki screamer is powered by a liquid-cooled inline four-cylinder engine that’s capable of producing 50 hp (with ram air) at 15,500 RPM and 22.9 Nm of torque at 14,500 RPM. It is mated to a 6-speed transmission with an assist and slipper clutch for a lighter pull as well as a Kawasaki Quickshifter for even faster and smoother gear changes and even quicker lap times. It gives a much wider rev range of up to more than 15,000 RPM with most of its power delivery felt from its low to mid-range level.
+                            <br><br>
+                            It comes standard with dual-channel ABS, and Kawasaki Traction Control (KTRC). Its dash comes with a combination of an analog tachometer and digital LCD multi-info panel giving the rider all the standard gauges, readouts, gear indicators. Lastly, it has two selectable riding modes with Low, and Full.                     
+                        </H5>
+                    </p>
+                </div>
+            </div>
+        </div>      
+
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="super/MV Agusta.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 MV Agusta F3 675
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                Reintroduced in the Philippines earlier in 2019, the MV Agusta F3 675 is the baseline model of the F3 series from the Italian motorcycle manufacturer. It was first showcased at the EICMA motorcycle show in Milan and was introduced in 2012. It incorporates the dynamic lines of the F4 series, complemented by a diamond headlight, tapered seat shell, and single-sided swingarm. The F3 differs from the F4 with the side positioning of the tailpipe. It was in 2013 when MV Agusta split the F3 nameplate into two engine offerings: a 675 cc and 800cc. For the Philippine market, this bike is made available with only one ABS variant which retails at P1,100,000.
+                                <br><br>
+                                Locally, the F3 is offered with two variants: the base F3 675 ABS model and F3 675 RC. The RC was inspired by MV racers, which gave birth to an uprated 16.5-liter gasoline engine and modified chassis. Handling and stability are superb, thanks to MV Agusta’s signature short wheelbase, steep steering head angle, and short trail. This is accentuated by a short steel lattice frame with an aluminum swingarm, giving the bike the aggressive aerodynamic body.
+                                <br><br>
+                                At the heart of the F3 675 is a 16.5-liter liquid-cooled, four-stroke DOHC 675 cc engine. This mill comes with a 6-speed manual transmission. The MV Agusta F3 675 is capable of up to 110 hp and 71 Nm of torque.
+                                <br><br>
+                                Safety and convenience features include ABS and traction control system (both regular and cornering), slipper clutch, steering damper, engine immobilizer, a full set of LED lighting system, pass switch, quick shifter, and digital display screen. It also features MV Agusta’s four riding modes, namely Normal, Rain, Sport, and Custom.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="super/Suzuki Katana.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 Suzuki Katana 1000
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                Launched in October 2019, the Suzuki Katana 1000 is the Japanese brand's new contender in the super sport bike segment. This sharp-looking bike is a mix of a powerful engine and top-notch engineering. It is designed based on Suzuki GSX S1000 and was improved for a more aesthetically-pleasing appearance. This legend is priced at P817,000.
+                                <br><br>
+                                The Suzuki Katana embraces a boxy body, an LED headlamp, and has a swingarm-mounted satellite fender. Giving the rider's information is the LCD instrument. It also has modern features like easy start, Low RPM Assist, three-mode traction control, and Anti-lock Braking System (ABS).
+                                <br><br>
+                                For great rideability, it comes with inverted front forks, along with a monoshock with adjustable preload and damping. Safety features are taken care of by dual disc brakes with Brembo Monobloc as well as a single disc with Nissin caliper at the rear.
+                                <br><br>
+                                Powering this super sport bike is a 999cc four-cylinder engine that can deliver a maximum output of 150 hp and 108 Nm of torque. This power mill is then coupled to a 6-speed manual transmission.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="super/suzuki-hayabusa.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 Suzuki Hayabusa GSX-R1300
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                Excellent handling, superb engineering, smart aerodynamics, and a 300km/h-plus top speed—it’s no wonder that the Suzuki Hayabusa GSX-R1300 has been regarded as one of the best performance bikes in the world since 1999. This fast machine comes with a sticker price of P1,199,000
+                                <br><br>
+                                For the price, you’d also get a load of features. The Suzuki Drive Mode Selector (S-DMS) lets the rider match the Hayabusa’s power delivery to the riding conditions. A steering damper feature is designed to ease unwanted vibration and steering forces. Behind the handlebars are four analog gauges including a tachometer and speedometer. There's also an LCD panel that includes a clock, gear position indicator, S-DMS indicator, odometer, and dual trip meters take center stage. An engine rpm light is also available to ensure accurate shifts from the rider. Lastly, a bright LED taillight with a clear inner lens and a red outer lens can be seen at the back.
+                                <br><br>
+                                What makes the ‘Busa’ charge all the way to that magical number is a two-valve, fuel-injected and liquid-cooled inline-four, 1,340cc engine. That mill produces a whopping 197 hp and 155 Nm of torque and contains some mechanical wizardry that includes Suzuki’s advanced fuel injection system called Suzuki Dual Throttle Valve (SDTV). It’s said to improve combustion efficiency and give smooth throttle response. The Hayabusa’s engine is coupled to a close-ratio, constant-mesh six-speed transmission.
+                                <br><br>
+                                To avoid the ultra-sport bike to get out of hand, there are dual 310mm floating-brake rotors that are connected to Brembo front brake calipers. The stoppers are lighter and more rigid than conventional calipers, delivering better feedback and better control. An Anti-lock Braking System (ABS) is also included in the host of safety features.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+
+    </div>       
+</div>
+
+<section class="ffooter">
+	<footer class="page-footer">
+        <div class="container">
+            <div class="row">
+				<div class="col l6 s12">
+                	<h4 class="black-text">Contact Us</h4>
+               	    <p class="black-text">123 Anywhere St., Any City, ST 12345</p>
+                    <p class="black-text">Phone : +631234567892</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                	<h4 class="black-text">Social Media Links</h4>
+                	  <ul>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Facebook</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Instagram</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Twitter</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Whatsapp</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Telegram</a></li>
+                	  </ul>
+                </div>
+            </div>
+       </div>
+
+    		<<div class="footer-copyright">
+            	<div class="container black-text">
+            		© 2023 Copyright @ WorldOfSpeed
+            			<a class="black-text right" href="#!">WE ARE SPEED <span><i class="tiny material-icons">motorcycle</i></span></a>
+               </div>
+            </div>
+    </footer>
+</section>  
+
+</body>
+
+        
+    <script src="js/jsquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $(".modal").modal();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+        });   
+    </script>
+
+</body>
+</html>

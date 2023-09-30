@@ -1,0 +1,495 @@
+<html lang="en">
+<head>
+     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Compiled and minified CSS -->
+
+    <style> 
+        .brand-logo img {
+        position: absolute;
+        width: 400px;
+        height: 60px;
+        padding-top: 8px;
+        padding-left: 0px;
+
+    }
+    .row{
+        margin: none;
+    }
+
+    .row_kawasaki{
+        border: 5px solid #00e676;
+    }
+    .row_honda{
+        border: 5px solid#e53935;
+    }
+    .row_yamaha{
+        border: 5px solid#1565c0
+    }
+    .row_ktm{
+        border: 5px solid#ff8f00;
+    }
+    .collection-item img{  
+        width: 350px;
+      height: 200px;
+      position:relative;
+    }
+
+    .section{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    }
+
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+    .banner .quote{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        border-radius: 40px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color:#b71c1c;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    } 
+
+    .banner .quote span{
+        font-size: 1.4em;
+    }
+
+    ul.specs{
+        list-style-type: square;
+    }
+    @media (min-width: 1025px) and (max-width: 1280px){
+    .logo img{
+        height: 25vw;
+    }
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.5vw;
+        }
+        
+
+    .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 25vw;
+            height: 5vw;          
+            left: 1vw;
+    }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px){
+        .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 40vw;
+            height: 6vw;          
+            left: 7vw;
+    } 
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.8vw;
+        }
+
+    }
+    
+@media (min-width: 481px) and (max-width: 767px) {
+    .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 50vw;
+            height: 8vw;          
+            left: 3vw;
+    }
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.8vw;
+        }
+    }
+
+@media (max-width: 480px) {
+    .brand-logo img {
+            display: center;
+            position: absolute;
+            width: 50vw;
+            height: 11vw;          
+            left: 8vw;
+    }
+    .banner .quote{
+        display: flex;
+        position: absolute;
+        top: 23vw;
+        left: 2%;
+        }
+        .banner .quote h1{
+        font-size: 4.8vw;
+        }
+    }
+
+    .row > div{
+            border: 4x solid transparent;
+            line-height: 20px;
+        }
+
+    .page-footer {
+        background: #fdd835 !important;
+    }
+
+</style>
+
+</head>
+<body class="black">
+
+
+<!-- /* NAVBAR */ -->
+<div class="navbar-fixed">
+    <nav class="black nav-wrapper">
+        <a href="/index1.html" class="brand-logo"><img src="img/logo.png" alt="kawasaki"></a>
+
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile"class="right hide-on-med-and-down">
+            
+            <li><a href="/index1.html" class="btn black">HOME
+            </a></li>
+
+            <li><a href="/index2.html" class="btn black modal-trigger">CRUISER
+            </a></li>
+
+            <li><a href="/index3.html" class="btn black modal-trigger">SPORT
+            </a></li>
+
+            <li><a href="/index4.html" class="btn black modal-trigger">TOURING
+            </a></li>
+
+        </ul>
+</div>
+<!-- /* SIDE NAV    */ -->
+        <ul class="sidenav gray" id="mobile-menu">
+
+            <li><a href="/index1.html" class="btn black">HOME
+            </a></li>
+
+            <li><a href="/index2.html" class="btn black modal-trigger">CRUISER
+            </a></li>
+
+            <li><a href="/index3.html" class="btn black modal-trigger">SPORT
+            </a></li>
+
+            <li><a href="/index4.html" class="btn black modal-trigger">TOURING
+            </a></li>
+
+            <li><a href="#" class="btn sidenav-close red">CLOSE
+                <i class="material-icons right">close</i>
+            </a></li>
+        </ul>
+    </nav>
+
+
+<header>
+    <div class="parallax-container hide-on-med-and-down" style="height: 500px; width: 100%;">
+        <div class="parallax">
+            <img src="touring/touring banner.png">
+        </div>
+    </div>
+
+    <section class="banner hide-on-large-only">
+        <img src="touring/touring banner.png" alt="">
+    </section>
+
+</header>
+
+<br>
+<div>
+    <div class="row black">
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="touring/2023 BMW R 1250 R.png" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border: 3px solid #fdd835;">
+                    <span class="card-title activator">2023 BMW R 1250 R
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW
+                        <i class="material-icons right">close</i>
+                    </span>
+                        <p>
+                            <H5>
+                                Dynamic design, powerful engine, and a plethora of innovative features - the BMW R 1250 R got all these characteristics. This sport touring bike provides a thrilling ride, perfect for adventures and long-distance trips. It comes in three variations such as the ABS variant at P1,295,000, HP Style at P1,345,000, Option 719 Bronze Mettalic at P1,375,000.
+                                <br><br>
+                                The R 1250 R also highlights its convenient features such as 6.5-inch TFT display with phone connectivity, LED taillight, on-board computer, heated grips, and power socket.
+                                <br><br>
+                                As for safety and security, this premium bike is attached with dual floating disc brake and rear single disc brake. Other features include Anti-lock Braking System (ABS), Automatic Stability Control (ASC), Hill Start Control (HSA), slipper clutch, immobilizer, and steering damper.
+                                <br><br>
+                                Powering this sport touring motorcycle is a 1,254cc liquid-cooled, four-stroke flat twin Boxer engine. It can deliver a maximum output of 136 hp and 143 Nm of torque, partnered with a 6-speed manual transmission. For a more punchy delivery, the R 1250 R is equipped with BMW ShiftCam (Variable Camshaft Control).
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="touring/2023 Kawasaki Bajaj Dominar 400 UG.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator">2023 Kawasaki Bajaj Dominar 400 UG
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                Kawasaki Motors Corporation Philippines has been receiving a great amount of attention in the local motorcycle scene. One of its top contenders in the sports-touring segment is the Kawasaki Bajaj Dominar 400. Its name ‘Dominar’ which also means ‘dominate’, suits its muscular appearance and great capabilities for those seeking thrilling adventures. This head-turner is priced at P199,700.
+                                <br><br>
+                                The Kawasaki Bajaj Dominar 400 got an LED headlamp and tail lamp and adjustable headlights. Other essential features equipped on this motorbike include a digital odometer, speedometer, fuel gauge, and a split reverse LCD display.
+                                <br><br>
+                                This sports-touring motorcycle shares the same powertrain with the Austrian brand KTM Duke 390, which is a powerful 373cc single-cylinder, SOHC, liquid-cooled, and fuel-injected gasoline engine that has 35 hp and 35 Nm of torque. Its mill is then coupled to a 6-speed manual transmission.
+                                <br><br>
+                                For added safety, Kawasaki Bajaj Dominar 400 features an engine check warning, pass switch, slipper clutch, and Anti-lock Braking System (ABS).
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="touring/2023 BMW S 1000 XR.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 BMW S 1000 XR
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                The BMW S 1000 XR is the ultimate adventure machine, combining dynamic performance and the best aspects of a sportbike all in one package. Locally launched last 2015, the S 1000 XR is one good looking bike, exhibiting sportiness at its finest. For the Philippine market, this sportbike is currently sold with only one ABS variant, retailing at P1,340,000.
+                                <br><br>
+                                Other than its impressive looks, this bike does come with a generous amount of features, including halogen headlamp, LED indicators and tail lamp, a digital gauge cluster, and cruise control.
+                                <br><br>
+                                In terms of powertrain, the S 1000 XR has a 999cc four-cylinder, in-line engine, 4-stroke, 4-valves per Cylinder, DOHC which churns out a mighty 160 hp and 112 Nm of torque. Its engine is then paired with a 6-speed manual transmission.
+                                <br><br>
+                                This sport bike comes with a ton of safety features including Anti-lock Braking System (ABS), slipper clutch, traction control, steering damper, a pass switch, and many more. Additionally, the BMW S 1000 XR comes with two selectable driving modes as standard, namely a ‘Rain’ and ‘Road’ mode which allows drivers to adapt to unpredictable driving conditions.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="touring/2023 KTM 1290 Super Duke GT.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 KTM 1290 Super Duke GT
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                The KTM 1290 Super Duke GT is a long-distance sport touring bike that’s made even better. Priced at P1,250,000, this motorcycle ensures enjoyable touring with some key features.
+                                <br><br>
+                                This sharp-looking bike comes with a handlebar that can be adjusted four-ways for that perfect riding position. A command center also takes center stage here, where suspension settings and ride modes can be fettled at a push of a button. Behind the handlebar sits a 6.5 inch TFT instrument cluster. The Super Duke’s tank is designed to contain as much fuel as possible for those long-distance trips.
+                                <br><br>
+                                The bike has more than enough power, with 158hp and 140 Nm of torque courtesy of a two-cylinder, four-stroke DOHC 1,301cc engine. The power is then transferred to the wheels with a 6-speed gearbox with a hydraulic clutch. A sportier exhaust can be optioned, too, for that extra engine sound and a weight saving of 1.5 kilograms over the standard exhaust.
+                                <br><br>
+                                It will also keep its rider safe with anti-lock braking (ABS), stability control, tire-pressure monitor system, and LED cornering lights for added visibility on the road. Disc brakes are standard.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="touring/2023 MV Agusta Turismo Veloce 800.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 MV Agusta Turismo Veloce 800
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                    <p>
+                        <H5>
+                            Advertised as “The Tourer With A Racing Spirit,” the MV Agusta Turismo Veloce 800 is basically a sports bike built on a touring frame. The name Touring Veloce, which is an Italian term, translates to “Fast Touring” and it sits in the sports touring segment that’s dominated by notable nameplates like the Ducati Multistrada. The Touring Veloce made its first appearance at a press road test event in 2015. MV Agusta initially produced a low number of units for the Touring Veloce due to past financial crises.
+                            <br><br>
+                            Motostrada, the official distributor of MV Agusta in the Philippines, introduced the current-generation Turismo Veloce 800 in May 2019, together with the Brutale and F3 line. Aside from the standard ABS model, the MV Agusta Turismo Veloce has three other variants: Lusso, Lusso SCS, and RC (Reparto Corse) SCS. SCS stands for Smart Clutch System, which provides electronic management to the bike’s clutch system. Price starts at P1,100,000 for the base variant and reaches up to P1,600,000, with its variants being composed of the Rosso, Lusso, Lusso SCS, and RC SCS.
+                            <br><br>
+                            Power is fed by a liquid-cooled, four-stroke DOHC 798cc engine that comes with a 6-speed manual transmission. This setup can reach 110 hp and 80 Nm of torque.
+                            <br><br>
+                            Among the basic safety and convenience features are full ABS and traction control suits, slipper clutch, immobilizer, steering damper, cruise control, and heated grips except for the ABS variant. It also comes with MV Agusta’s riding mode, quick shifter, and digital information screen. Lastly, the Turismo Veloce 800 features a full LED lighting system and a pass switch.                     
+                        </H5>
+                    </p>
+                </div>
+            </div>
+        </div>      
+
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="touring/2023 BMW R 1250 RT.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 BMW R 1250 RT
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                Decent power, handling, comfort, stability, and versatility all equates to pure driving pleasure, that’s the BMW R 1250 RT. Locally, this sport touring bike is made available with only one ABS variant. The said variant retails at P1,875,000.
+                                <br><br>
+                                This bike comes with a ton of standard features including halogen headlamp, LED indicators and tail lamp, and a digital gauge cluster. Apart from that, it also comes with cruise control, heated grips, USB charging port, phone connectivity, a navigation system, and a hill start assist.
+                                <br><br>
+                                In terms of powertrain, the R 1250 RT is powered by a 1,254cc liquid-cooled, Boxer two-cylinder engine, 4-stroke, 4-valves, DOHC which churns out a mighty 136 hp and 142 Nm of torque. This engine is then paired with a 6-speed manual transmission.
+                                <br><br>
+                                Safety and security features include Anti-lock Braking System (ABS), traction control, slipper clutch, steering damper, and an immobilizer as standard.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="touring/2023 Suzuki GSX-S1000F.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 Suzuki GSX-S1000F
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                The Suzuki GSX-S1000F is a sports tourer version of the GSX-S1000 naked. It features better aerodynamics as well as high-speed stability. As also apt for this segment, the rider’s seat is said to be shaped for sport riding. What makes it sportier is a powerful power plant between its wheels. This bike was introduced in 2019 and is available at P734,000 for its ABS variant.
+                                <br><br>
+                                The Suzuki GSX-S1000F is packed with features such as an LCD instrument with riding information such as speedometer, tachometer, odometer, dual trip meters, gear position, coolant temperature, driving range, average fuel consumption, and clock.
+                                <br><br>
+                                This sport touring bike owns a 999cc inline, four-cylinder engine that produces a punchy 150 hp and 108 Nm of torque. These power outputs are managed by a 6-speed manual transmission.
+                                <br><br>
+                                The GSX-S1000F is equipped with disc brakes, aided by Anti-lock Braking System (ABS). It is also integrated with a traction control system (TCS) that prevents your riding to get out of hand. It has three modes for performance riding, riding in poor road conditions, and a mode that’s a mix of the first two.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+
+        <div class="col s12 m12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img class="activator" src="touring/2023 Yamaha Tracer 900.webp" alt="">
+                </div>
+                <div class="card-content black yellow-text text-darken-1" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;border: 3px solid #fdd835;">
+                    <span class="card-title activator"">2023 Yamaha Tracer 900
+                        <i class="material-icons right">more_vert</i></span>
+                    </span>
+                </div>
+                <div class="card-reveal grey lighten-2">
+                    <span class="card-title black-text" style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">VARIANT OVERVIEW<i class="material-icons right">close</i></span>
+                        <p>
+                            <H5>
+                                Locally launched last January 2017, the Yamaha Tracer 900 is meant for your long distance adventures. This sport touring bike combines its pleasing looks with that sporty engine feel. In the Philippines, it is made available with only one ABS variant, retailing at P619,000. As for color options, the Tracer 900 can only be had in Black.
+                                <br><br>
+                                As for standard features, this sport touring bike comes decently equipped, including LED headlamp, tail lamp, and a modern touch of digital gauges. Apart from that, you also get different riding modes.
+                                <br><br>
+                                Its beating heart is an 847cc liquid-cooled, 4-stroke, DOHC engine which produces a mighty 115 hp and 88 Nm of torque. This mill is then paired with a 6-speed manual transmission.
+                                <br><br>
+                                As for safety and security features, the Yamaha Tracer 900 gets Anti-lock Braking System (ABS), traction control, slipper clutch, immobilizer, and a pass switch.
+                            </H5>
+                        </p>
+                  </div>
+            </div>
+        </div>      
+
+    </div>       
+</div>
+
+<section class="ffooter">
+	<footer class="page-footer">
+        <div class="container">
+            <div class="row">
+				<div class="col l6 s12">
+                	<h4 class="black-text">Contact Us</h4>
+               	    <p class="black-text">123 Anywhere St., Any City, ST 12345</p>
+                    <p class="black-text">Phone : +631234567892</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                	<h4 class="black-text">Social Media Links</h4>
+                	  <ul>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Facebook</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Instagram</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Twitter</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Whatsapp</a></li>
+                        <li><a class="black-text" href="#" onclick="toggleModal();">Telegram</a></li>
+                	  </ul>
+                </div>
+            </div>
+       </div>
+
+    		<<div class="footer-copyright">
+            	<div class="container black-text">
+            		© 2023 Copyright @ WorldOfSpeed
+            			<a class="black-text right" href="#!">WE ARE SPEED <span><i class="tiny material-icons">motorcycle</i></span></a>
+               </div>
+            </div>
+    </footer>
+</section> 
+
+</body>
+
+        
+    <script src="js/jsquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $(".modal").modal();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+        });   
+    </script>
+
+</body>
+</html>
